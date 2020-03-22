@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0312A56C7BDFC38B41ED44DF /* Pods_QraphQlProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09F0500800364F776EA90D3 /* Pods_QraphQlProjectTests.framework */; };
+		CE27FBEDB17DA1523A9BDA85 /* Pods_QraphQlProject_QraphQlProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6537A5A5DC862424C03732D /* Pods_QraphQlProject_QraphQlProjectUITests.framework */; };
+		E924E82BEFBAB41C936E0357 /* Pods_QraphQlProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA59861622B69EE12D35B55 /* Pods_QraphQlProject.framework */; };
+		F4F4C5F224276A750093B6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C5F124276A750093B6E0 /* AppDelegate.swift */; };
+		F4F4C5F424276A750093B6E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C5F324276A750093B6E0 /* SceneDelegate.swift */; };
+		F4F4C5F624276A750093B6E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C5F524276A750093B6E0 /* ViewController.swift */; };
+		F4F4C5F924276A750093B6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4C5F724276A750093B6E0 /* Main.storyboard */; };
+		F4F4C5FB24276A780093B6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F4C5FA24276A780093B6E0 /* Assets.xcassets */; };
+		F4F4C5FE24276A780093B6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F4C5FC24276A780093B6E0 /* LaunchScreen.storyboard */; };
+		F4F4C60924276A780093B6E0 /* QraphQlProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C60824276A780093B6E0 /* QraphQlProjectTests.swift */; };
+		F4F4C61424276A780093B6E0 /* QraphQlProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C61324276A780093B6E0 /* QraphQlProjectUITests.swift */; };
+		F4F4C624242778A60093B6E0 /* Users.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F4F4C623242778A60093B6E0 /* Users.graphql */; };
+		F4F4C62824277C900093B6E0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C62724277C900093B6E0 /* API.swift */; };
+		F4F4C62A24277D920093B6E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C62924277D920093B6E0 /* Constants.swift */; };
+		F4F4C62C24278CD00093B6E0 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4C62B24278CD00093B6E0 /* NetworkLayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4F4C60524276A780093B6E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4F4C5E624276A750093B6E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F4C5ED24276A750093B6E0;
+			remoteInfo = QraphQlProject;
+		};
+		F4F4C61024276A780093B6E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4F4C5E624276A750093B6E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F4C5ED24276A750093B6E0;
+			remoteInfo = QraphQlProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FA59861622B69EE12D35B55 /* Pods_QraphQlProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QraphQlProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3504A9DBC3D53B5226FCF912 /* Pods-QraphQlProject-QraphQlProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProject-QraphQlProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-QraphQlProject-QraphQlProjectUITests/Pods-QraphQlProject-QraphQlProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44A1CBB5FEBEF4CD0CE103B4 /* Pods-QraphQlProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProject.release.xcconfig"; path = "Target Support Files/Pods-QraphQlProject/Pods-QraphQlProject.release.xcconfig"; sourceTree = "<group>"; };
+		9464048DBABD42981C6EBA70 /* Pods-QraphQlProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProjectTests.release.xcconfig"; path = "Target Support Files/Pods-QraphQlProjectTests/Pods-QraphQlProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BC39853FA7F01C0E6D69112 /* Pods-QraphQlProject-QraphQlProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProject-QraphQlProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-QraphQlProject-QraphQlProjectUITests/Pods-QraphQlProject-QraphQlProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B292B9BD80D8DA94DE1A8A44 /* Pods-QraphQlProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-QraphQlProjectTests/Pods-QraphQlProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6537A5A5DC862424C03732D /* Pods_QraphQlProject_QraphQlProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QraphQlProject_QraphQlProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09F0500800364F776EA90D3 /* Pods_QraphQlProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QraphQlProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4C5EE24276A750093B6E0 /* QraphQlProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QraphQlProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4C5F124276A750093B6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4F4C5F324276A750093B6E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4F4C5F524276A750093B6E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4F4C5F824276A750093B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4F4C5FA24276A780093B6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4F4C5FD24276A780093B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4F4C5FF24276A780093B6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4C60424276A780093B6E0 /* QraphQlProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QraphQlProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4C60824276A780093B6E0 /* QraphQlProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QraphQlProjectTests.swift; sourceTree = "<group>"; };
+		F4F4C60A24276A780093B6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4C60F24276A780093B6E0 /* QraphQlProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QraphQlProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F4C61324276A780093B6E0 /* QraphQlProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QraphQlProjectUITests.swift; sourceTree = "<group>"; };
+		F4F4C61524276A780093B6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F4C623242778A60093B6E0 /* Users.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Users.graphql; sourceTree = "<group>"; };
+		F4F4C62724277C900093B6E0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F4F4C62924277D920093B6E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4F4C62B24278CD00093B6E0 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		FEBD5F0CD6B868819554EBD1 /* Pods-QraphQlProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QraphQlProject.debug.xcconfig"; path = "Target Support Files/Pods-QraphQlProject/Pods-QraphQlProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4F4C5EB24276A750093B6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924E82BEFBAB41C936E0357 /* Pods_QraphQlProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60124276A780093B6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312A56C7BDFC38B41ED44DF /* Pods_QraphQlProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60C24276A780093B6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE27FBEDB17DA1523A9BDA85 /* Pods_QraphQlProject_QraphQlProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182ED91605A04D24179DA127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA59861622B69EE12D35B55 /* Pods_QraphQlProject.framework */,
+				C6537A5A5DC862424C03732D /* Pods_QraphQlProject_QraphQlProjectUITests.framework */,
+				D09F0500800364F776EA90D3 /* Pods_QraphQlProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB6E5D16A5B4D3DC28045142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD5F0CD6B868819554EBD1 /* Pods-QraphQlProject.debug.xcconfig */,
+				44A1CBB5FEBEF4CD0CE103B4 /* Pods-QraphQlProject.release.xcconfig */,
+				3504A9DBC3D53B5226FCF912 /* Pods-QraphQlProject-QraphQlProjectUITests.debug.xcconfig */,
+				9BC39853FA7F01C0E6D69112 /* Pods-QraphQlProject-QraphQlProjectUITests.release.xcconfig */,
+				B292B9BD80D8DA94DE1A8A44 /* Pods-QraphQlProjectTests.debug.xcconfig */,
+				9464048DBABD42981C6EBA70 /* Pods-QraphQlProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4F4C5E524276A750093B6E0 = {
+			isa = PBXGroup;
+			children = (
+				F4F4C5F024276A750093B6E0 /* QraphQlProject */,
+				F4F4C60724276A780093B6E0 /* QraphQlProjectTests */,
+				F4F4C61224276A780093B6E0 /* QraphQlProjectUITests */,
+				F4F4C5EF24276A750093B6E0 /* Products */,
+				DB6E5D16A5B4D3DC28045142 /* Pods */,
+				182ED91605A04D24179DA127 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4F4C5EF24276A750093B6E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4C5EE24276A750093B6E0 /* QraphQlProject.app */,
+				F4F4C60424276A780093B6E0 /* QraphQlProjectTests.xctest */,
+				F4F4C60F24276A780093B6E0 /* QraphQlProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4F4C5F024276A750093B6E0 /* QraphQlProject */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4C62724277C900093B6E0 /* API.swift */,
+				F4F4C5F124276A750093B6E0 /* AppDelegate.swift */,
+				F4F4C5F324276A750093B6E0 /* SceneDelegate.swift */,
+				F4F4C5F524276A750093B6E0 /* ViewController.swift */,
+				F4F4C5F724276A750093B6E0 /* Main.storyboard */,
+				F4F4C5FA24276A780093B6E0 /* Assets.xcassets */,
+				F4F4C5FC24276A780093B6E0 /* LaunchScreen.storyboard */,
+				F4F4C5FF24276A780093B6E0 /* Info.plist */,
+				F4F4C623242778A60093B6E0 /* Users.graphql */,
+				F4F4C62924277D920093B6E0 /* Constants.swift */,
+				F4F4C62B24278CD00093B6E0 /* NetworkLayer.swift */,
+			);
+			path = QraphQlProject;
+			sourceTree = "<group>";
+		};
+		F4F4C60724276A780093B6E0 /* QraphQlProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4C60824276A780093B6E0 /* QraphQlProjectTests.swift */,
+				F4F4C60A24276A780093B6E0 /* Info.plist */,
+			);
+			path = QraphQlProjectTests;
+			sourceTree = "<group>";
+		};
+		F4F4C61224276A780093B6E0 /* QraphQlProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4F4C61324276A780093B6E0 /* QraphQlProjectUITests.swift */,
+				F4F4C61524276A780093B6E0 /* Info.plist */,
+			);
+			path = QraphQlProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4F4C5ED24276A750093B6E0 /* QraphQlProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4C61824276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProject" */;
+			buildPhases = (
+				5DC8CC25BF6AA5BA97D672BB /* [CP] Check Pods Manifest.lock */,
+				F4F4C6222427700D0093B6E0 /* Generate Apollo GraphQL API */,
+				F4F4C5EA24276A750093B6E0 /* Sources */,
+				F4F4C5EB24276A750093B6E0 /* Frameworks */,
+				F4F4C5EC24276A750093B6E0 /* Resources */,
+				42F0318A35AA59C1517202A8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QraphQlProject;
+			productName = QraphQlProject;
+			productReference = F4F4C5EE24276A750093B6E0 /* QraphQlProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4F4C60324276A780093B6E0 /* QraphQlProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4C61B24276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProjectTests" */;
+			buildPhases = (
+				9536A2F87364D5EB4DAB39EB /* [CP] Check Pods Manifest.lock */,
+				F4F4C60024276A780093B6E0 /* Sources */,
+				F4F4C60124276A780093B6E0 /* Frameworks */,
+				F4F4C60224276A780093B6E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4F4C60624276A780093B6E0 /* PBXTargetDependency */,
+			);
+			name = QraphQlProjectTests;
+			productName = QraphQlProjectTests;
+			productReference = F4F4C60424276A780093B6E0 /* QraphQlProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4F4C60E24276A780093B6E0 /* QraphQlProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F4C61E24276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProjectUITests" */;
+			buildPhases = (
+				1A339738F7413FA512E0BED5 /* [CP] Check Pods Manifest.lock */,
+				F4F4C60B24276A780093B6E0 /* Sources */,
+				F4F4C60C24276A780093B6E0 /* Frameworks */,
+				F4F4C60D24276A780093B6E0 /* Resources */,
+				760FC9871347207D8CC63792 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4F4C61124276A780093B6E0 /* PBXTargetDependency */,
+			);
+			name = QraphQlProjectUITests;
+			productName = QraphQlProjectUITests;
+			productReference = F4F4C60F24276A780093B6E0 /* QraphQlProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4F4C5E624276A750093B6E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.megatrustgroup.asli;
+				TargetAttributes = {
+					F4F4C5ED24276A750093B6E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F4F4C60324276A780093B6E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F4F4C5ED24276A750093B6E0;
+					};
+					F4F4C60E24276A780093B6E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F4F4C5ED24276A750093B6E0;
+					};
+				};
+			};
+			buildConfigurationList = F4F4C5E924276A750093B6E0 /* Build configuration list for PBXProject "QraphQlProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4F4C5E524276A750093B6E0;
+			productRefGroup = F4F4C5EF24276A750093B6E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4F4C5ED24276A750093B6E0 /* QraphQlProject */,
+				F4F4C60324276A780093B6E0 /* QraphQlProjectTests */,
+				F4F4C60E24276A780093B6E0 /* QraphQlProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4F4C5EC24276A750093B6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4C5FE24276A780093B6E0 /* LaunchScreen.storyboard in Resources */,
+				F4F4C624242778A60093B6E0 /* Users.graphql in Resources */,
+				F4F4C5FB24276A780093B6E0 /* Assets.xcassets in Resources */,
+				F4F4C5F924276A750093B6E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60224276A780093B6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60D24276A780093B6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A339738F7413FA512E0BED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QraphQlProject-QraphQlProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F0318A35AA59C1517202A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject/Pods-QraphQlProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject/Pods-QraphQlProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject/Pods-QraphQlProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC8CC25BF6AA5BA97D672BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QraphQlProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760FC9871347207D8CC63792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject-QraphQlProjectUITests/Pods-QraphQlProject-QraphQlProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject-QraphQlProjectUITests/Pods-QraphQlProject-QraphQlProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QraphQlProject-QraphQlProjectUITests/Pods-QraphQlProject-QraphQlProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9536A2F87364D5EB4DAB39EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QraphQlProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F4C6222427700D0093B6E0 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4F4C5EA24276A750093B6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4C62C24278CD00093B6E0 /* NetworkLayer.swift in Sources */,
+				F4F4C62A24277D920093B6E0 /* Constants.swift in Sources */,
+				F4F4C5F624276A750093B6E0 /* ViewController.swift in Sources */,
+				F4F4C5F224276A750093B6E0 /* AppDelegate.swift in Sources */,
+				F4F4C62824277C900093B6E0 /* API.swift in Sources */,
+				F4F4C5F424276A750093B6E0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60024276A780093B6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4C60924276A780093B6E0 /* QraphQlProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F4C60B24276A780093B6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4C61424276A780093B6E0 /* QraphQlProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4F4C60624276A780093B6E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4F4C5ED24276A750093B6E0 /* QraphQlProject */;
+			targetProxy = F4F4C60524276A780093B6E0 /* PBXContainerItemProxy */;
+		};
+		F4F4C61124276A780093B6E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4F4C5ED24276A750093B6E0 /* QraphQlProject */;
+			targetProxy = F4F4C61024276A780093B6E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4F4C5F724276A750093B6E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4F4C5F824276A750093B6E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4F4C5FC24276A780093B6E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4F4C5FD24276A780093B6E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4F4C61624276A780093B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4F4C61724276A780093B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4F4C61924276A780093B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEBD5F0CD6B868819554EBD1 /* Pods-QraphQlProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4F4C61A24276A780093B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A1CBB5FEBEF4CD0CE103B4 /* Pods-QraphQlProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4F4C61C24276A780093B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B292B9BD80D8DA94DE1A8A44 /* Pods-QraphQlProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QraphQlProject.app/QraphQlProject";
+			};
+			name = Debug;
+		};
+		F4F4C61D24276A780093B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9464048DBABD42981C6EBA70 /* Pods-QraphQlProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QraphQlProject.app/QraphQlProject";
+			};
+			name = Release;
+		};
+		F4F4C61F24276A780093B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3504A9DBC3D53B5226FCF912 /* Pods-QraphQlProject-QraphQlProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QraphQlProject;
+			};
+			name = Debug;
+		};
+		F4F4C62024276A780093B6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC39853FA7F01C0E6D69112 /* Pods-QraphQlProject-QraphQlProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB89TN363P;
+				INFOPLIST_FILE = QraphQlProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megatrustgroup.asli.QraphQlProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QraphQlProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4F4C5E924276A750093B6E0 /* Build configuration list for PBXProject "QraphQlProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4C61624276A780093B6E0 /* Debug */,
+				F4F4C61724276A780093B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4C61824276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4C61924276A780093B6E0 /* Debug */,
+				F4F4C61A24276A780093B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4C61B24276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4C61C24276A780093B6E0 /* Debug */,
+				F4F4C61D24276A780093B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F4C61E24276A780093B6E0 /* Build configuration list for PBXNativeTarget "QraphQlProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F4C61F24276A780093B6E0 /* Debug */,
+				F4F4C62024276A780093B6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4F4C5E624276A750093B6E0 /* Project object */;
+}
